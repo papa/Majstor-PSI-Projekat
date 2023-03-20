@@ -69,6 +69,15 @@ body {
     padding-right: 0;
 }
 
+#chat-show-conversations {
+    border-bottom: 1px solid lightgray;
+}
+
+#chat-show-conversations button {
+    margin: 10px;
+    width: 100%;
+}
+
 .navbar-brand {
     display: flex;
     flex-direction: row;
