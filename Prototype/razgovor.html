@@ -23,7 +23,7 @@
         <input type="text" class="form-control" id="conversations-search" placeholder="Pretraga razgovora...">
       </div>
     </div>
-    <div class="list-group" id="conversations-list">
+    <div class="list-group conversations-list">
       <div class="list-group-item list-group-item-action active">
         <div class="conversation-item">
           <div class="avatar">
@@ -171,10 +171,13 @@
       </div>
     </div>
   </div>
+
+
+
   <div class="col-md-12 col-lg-8 col-xl-9" id="chat-column">
 
     <div class="d-flex d-lg-none bg-light" id="chat-show-conversations">
-      <button class="btn btn-outline-secondary" id="chat-back-button">
+      <button class="btn btn-outline-secondary" id="chat-back-button" data-bs-toggle="modal" data-bs-target="#conversationsModal">
         <i class="fas fa-list"></i>
         Prikaži razgovore
       </button>
@@ -182,7 +185,7 @@
 
     <nav class="navbar navbar-light bg-light" id="chat-header">
       <div class="container-fluid">
-        <span class="navbar-brand" href="#">
+        <span class="navbar-brand">
             <img src="images/chat-avatar.png" alt="" id="chat-header-avatar">
           Korisnik 1
         </span>
@@ -322,6 +325,169 @@
         <button class="btn btn-primary" type="button" id="button-send">
             <i class="fas fa-paper-plane"></i>
         </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="conversationsModal"  data-bs-backdrop="static"  tabindex="-1">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">Odabir konverzacije</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="list-group conversations-list">
+          <div class="list-group-item list-group-item-action active">
+            <div class="conversation-item">
+              <div class="avatar">
+                <img src="images/chat-avatar.png" alt="">
+              </div>
+              <div class="content">
+                <div class="d-flex w-100 justify-content-between header">
+                  <h5>Korisnik 1</h5>
+                  <small>pre 3 dana</small>
+                </div>
+                <p>
+                  <i class="fas fa-reply"></i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="list-group-item list-group-item-action">
+            <div class="conversation-item">
+              <div class="avatar">
+                <img src="images/chat-avatar.png" alt="">
+              </div>
+              <div class="content">
+                <div class="d-flex w-100 justify-content-between header">
+                  <h5>Korisnik 2</h5>
+                  <small>pre 5 dana</small>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="list-group-item list-group-item-action">
+            <div class="conversation-item">
+              <div class="avatar">
+                <img src="images/chat-avatar.png" alt="">
+              </div>
+              <div class="content">
+                <div class="d-flex w-100 justify-content-between header">
+                  <h5>Korisnik 2</h5>
+                  <small>pre 5 dana</small>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="list-group-item list-group-item-action">
+            <div class="conversation-item">
+              <div class="avatar">
+                <img src="images/chat-avatar.png" alt="">
+              </div>
+              <div class="content">
+                <div class="d-flex w-100 justify-content-between header">
+                  <h5>Korisnik 2</h5>
+                  <small>pre 5 dana</small>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="list-group-item list-group-item-action">
+            <div class="conversation-item">
+              <div class="avatar">
+                <img src="images/chat-avatar.png" alt="">
+              </div>
+              <div class="content">
+                <div class="d-flex w-100 justify-content-between header">
+                  <h5>Korisnik 2</h5>
+                  <small>pre 5 dana</small>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="list-group-item list-group-item-action">
+            <div class="conversation-item">
+              <div class="avatar">
+                <img src="images/chat-avatar.png" alt="">
+              </div>
+              <div class="content">
+                <div class="d-flex w-100 justify-content-between header">
+                  <h5>Korisnik 2</h5>
+                  <small>pre 5 dana</small>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="list-group-item list-group-item-action">
+            <div class="conversation-item">
+              <div class="avatar">
+                <img src="images/chat-avatar.png" alt="">
+              </div>
+              <div class="content">
+                <div class="d-flex w-100 justify-content-between header">
+                  <h5>Korisnik 2</h5>
+                  <small>pre 5 dana</small>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="list-group-item list-group-item-action">
+            <div class="conversation-item">
+              <div class="avatar">
+                <img src="images/chat-avatar.png" alt="">
+              </div>
+              <div class="content">
+                <div class="d-flex w-100 justify-content-between header">
+                  <h5>Korisnik 2</h5>
+                  <small>pre 5 dana</small>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="list-group-item list-group-item-action">
+            <div class="conversation-item">
+              <div class="avatar">
+                <img src="images/chat-avatar.png" alt="">
+              </div>
+              <div class="content">
+                <div class="d-flex w-100 justify-content-between header">
+                  <h5>Korisnik 2</h5>
+                  <small>pre 5 dana</small>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zatvori</button>
       </div>
     </div>
   </div>

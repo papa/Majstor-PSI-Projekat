@@ -30,7 +30,7 @@ body {
 #conversations-search {
 }
 
-#conversations-list {
+.conversations-list {
     flex-grow: 1;
     overflow-y: auto;
 }
