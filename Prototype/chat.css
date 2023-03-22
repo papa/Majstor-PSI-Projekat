@@ -10,9 +10,9 @@ body {
 }
 
 #main-row {
-    margin: 0;
     flex-grow: 1;
     overflow-y: hidden;
+    margin: 75px 0 0;
 }
 
 #conversations-column {
