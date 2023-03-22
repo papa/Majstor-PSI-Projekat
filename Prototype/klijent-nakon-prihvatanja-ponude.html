@@ -14,7 +14,7 @@
 <body class="bg-light">
     <nav class="navbar bg-body-tertiary fixed-top" id="header">
         <div class="container-fluid">
-            <a href="homepage.html" class="navbar-brand" href="#">
+            <a href="moji-oglasi.html" class="navbar-brand" href="#">
                 <img src="images/logo.png" alt="Logo" id="logo">
             </a>
             <form class="d-flex">
@@ -24,7 +24,7 @@
                     </button>
                     <ul class="dropdown-menu  dropdown-menu-end">
                         <li><a class="dropdown-item" href="#">Profil</a></li>
-                        <li><a class="dropdown-item" href="#">Odjava</a></li>
+                        <li><a class="dropdown-item" href="login.html">Odjava</a></li>
                     </ul>
                 </div>
             </form>
@@ -32,16 +32,10 @@
     </nav>
     <div id="main" class="row justify-content-center bg-light">
         <div class="container col-lg-8">
-            <div class="row">
-                <div class="col">
-                    <img class="problem-slike" src="images/problem1.jpg">
-                </div>
-                <div class="col">
-                    <img class="problem-slike" src="images/problem2.jpg">
-                </div>
-                <div class="col">
-                    <img class="problem-slike" src="images/problem3.jpg">
-                </div>
+            <div class="row m-0" style="display: flex; justify-content: space-between; width: 100%">
+                <img class="problem-slike" src="images/problem1.jpg">
+                <img class="problem-slike" src="images/problem2.jpg">
+                <img class="problem-slike" src="images/problem3.jpg">
             </div>
             <hr>
         </div>
@@ -136,8 +130,8 @@
                                 varius blandit.
                         </div>
                         <div class="col-lg-2 mb-1">
-                                <button id="zakljucaj" type="button" class="btn-success">Zaključaj</button>
-                                <button id="otkazi" type="button" class="btn-danger">Otkaži</button>
+                                <button id="zakljucaj" type="button" class="btn btn-success" onclick="window.location = 'moji-oglasi.html'">Zaključaj</button>
+                                <button id="otkazi" type="button" class="btn btn-danger" onclick="window.location = 'klijent-u-oglasu.html'">Otkaži</button>
                         </div>
                     </div>
                     <small href="#" class="text-muted">Predložena cena: 5500 RSD</small>
