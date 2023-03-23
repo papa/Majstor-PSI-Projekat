@@ -14,15 +14,14 @@
 <body>
     <div class="containter-fluid">
 
-        <nav class="navbar bg-body-tertiary fixed-top" id="header">
+        <nav class="navbar bg-body-tertiary" id="header">
             <div class="container-fluid">
                 <a href="moji-oglasi.html" class="navbar-brand" href="#">
                     <img src="images/logo.png" alt="Logo" id="logo">
                 </a>
                 <form class="d-flex">
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Akcije
                         </button>
                         <ul class="dropdown-menu  dropdown-menu-end">
@@ -40,106 +39,47 @@
                 </form>
             </div>
         </nav>
-        <div class="row pt-10" id="moji-svi-select">
-            <div style="margin-top:200px" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Kreiranje oglasa</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body" style="height: 400px;">
-                            <div><input type="text" placeholder="Naslov oglasa..."></div>
-                            <div style="height: 200px;"><textarea placeholder="Unesite opis problema..." style="height: 200px;" cols="50" maxlength="200"></textarea></div>
-                            <div><input type="file" name="" id="" multiple="multiple"></div>
-                            <div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                    <label class="form-check-label" for="inlineCheckbox1">Kupatilo</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                    <label class="form-check-label" for="inlineCheckbox2">Kuhinja</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                                    <label class="form-check-label" for="inlineCheckbox3">Vodoinstalacije</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option3">
-                                    <label class="form-check-label" for="inlineCheckbox4">Cevi</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option3">
-                                    <label class="form-check-label" for="inlineCheckbox5">Parket</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option3">
-                                    <label class="form-check-label" for="inlineCheckbox6">Kuhinjski uređaji</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option3">
-                                    <label class="form-check-label" for="inlineCheckbox7">Klima uređaji</label>
-                                </div>
+        <div class="row pt-10">
+            <div class="col-lg-12 col-xl-12 align-items-center">
+                <div class="d-flex" style="flex-direction: column; align-items: center; justify-content: center">
+                    <br>
+                <nav class="nav nav-pills nav-justified" style="width: 50%">
+                    <a class="nav-link active" aria-current="page" href="moji-oglasi.html">Moji oglasi</a>
+                    <a class="nav-link" href="svi-oglasi.html">Svi oglasi</a>
+                </nav>
+                <div class="p-5">
+                    <div class="card mx-auto" style="width: 50%;">
+                        <img class="card-img-top rounded" src="images/problem4.jpg" alt="Card image cap">
+                        <div class="card-body text-center" onclick="window.location = 'klijent-u-oglasu.html'">
+                          <h5 class="card-title">Naslov oglasa</h5>
+                          <div class="container col-lg-8">
+                            <div class="container">
+                                <button type="button" class="btn btn-secondary tag" disabled>Cevi</button>
+                                <button type="button" class="btn btn-secondary tag" disabled>Kupatilo</button>
                             </div>
+                          </div>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p>
+                          <a href="#" class="stretched-link"></a>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary" onclick="window.location = 'klijent-u-oglasu.html'">Objavi oglas</button>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <div class="card card mx-auto" style="width: 50%;">
+                        <img class="card-img-top rounded" src="images/problem2.jpg" alt="Card image cap">
+                        <div class="card-body text-center" onclick="window.location = 'klijent-u-oglasu.html'">
+                          <h5 class="card-title">Naslov oglasa</h5>
+                          <div class="container col-lg-8">
+                            <div class="container">
+                                <button type="button" class="btn btn-secondary tag" disabled>Cevi</button>
+                                <button type="button" class="btn btn-secondary tag" disabled>Kupatilo</button>
+                            </div>
+                          </div>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p>
+                          <a href="#" class="stretched-link"></a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-12 col-xl-12 align-items-center">
-                <div class="d-flex" style="flex-direction: column; align-items: center; justify-content: center">
-                    <br>
-                    <nav class="nav nav-pills nav-justified" style="width: 50%">
-                        <a class="nav-link active" aria-current="page" href="moji-oglasi.html">Moji oglasi</a>
-                        <a class="nav-link" href="svi-oglasi.html">Svi oglasi</a>
-                    </nav>
-                    <div class="p-5">
-                        <div class="section-header">
-                            <h3>Aktivni oglasi</h3>
-                            <hr>
-                        </div>
-                        <div class="card mx-auto" style="width: 50%;">
-                            <img class="card-img-top rounded" src="images/problem4.jpg" alt="Card image cap">
-                            <div class="card-body text-center" onclick="window.location = 'klijent-u-oglasu.html'">
-                                <h5 class="card-title">Naslov oglasa</h5>
-                                <div class="container col-lg-8">
-                                    <div class="container">
-                                        <button type="button" class="btn btn-secondary tag" disabled>Cevi</button>
-                                        <button type="button" class="btn btn-secondary tag" disabled>Kupatilo</button>
-                                    </div>
-                                </div>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..
-                                </p>
-                                <a href="#" class="stretched-link"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-5">
-                        <div class="card card mx-auto" style="width: 50%;">
-                            <img class="card-img-top rounded" src="images/problem2.jpg" alt="Card image cap">
-                            <div class="card-body text-center" onclick="window.location = 'klijent-u-oglasu.html'">
-                                <h5 class="card-title">Naslov oglasa</h5>
-                                <div class="container col-lg-8">
-                                    <div class="container">
-                                        <button type="button" class="btn btn-secondary tag" disabled>Cevi</button>
-                                        <button type="button" class="btn btn-secondary tag" disabled>Kupatilo</button>
-                                    </div>
-                                </div>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..
-                                </p>
-                                <a href="#" class="stretched-link"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 
