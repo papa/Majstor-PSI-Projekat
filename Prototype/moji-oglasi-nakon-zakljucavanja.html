@@ -25,6 +25,7 @@
                             Akcije
                         </button>
                         <ul class="dropdown-menu  dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Kreiraj novi oglas</a></li>
                             <li><a class="dropdown-item" href="#">Profil</a></li>
                             <li><a class="dropdown-item" href="login.html">Odjava</a></li>
                         </ul>
@@ -37,16 +38,36 @@
                 <div class="d-flex" style="flex-direction: column; align-items: center; justify-content: center">
                     <br>
                 <nav class="nav nav-pills nav-justified" style="width: 50%">
-                    <a class="nav-link" href="moji-oglasi.html">Moji oglasi</a>
-                    <a class="nav-link active" href="svi-oglasi.html">Svi oglasi</a>
+                    <a class="nav-link active" aria-current="page" href="moji-oglasi.html">Moji oglasi</a>
+                    <a class="nav-link" href="svi-oglasi.html">Svi oglasi</a>
                 </nav>
                 <div class="p-5">
                     <div class="section-header">
                         <h3>Aktivni oglasi</h3>
                         <hr>
                     </div>
-                    <div class="card card mx-auto" style="width: 50%;">
-                        <img class="card-img-top rounded" src="images/problem6.jpg" alt="Card image cap">
+                    <div class="card mx-auto" style="width: 50%;">
+                        <img class="card-img-top rounded" src="images/problem4.jpg" alt="Card image cap">
+                        <div class="card-body text-center" onclick="window.location = 'klijent-u-oglasu.html'">
+                          <h5 class="card-title">Naslov oglasa</h5>
+                          <div class="container col-lg-8">
+                            <div class="container">
+                                <button type="button" class="btn btn-secondary tag" disabled>Cevi</button>
+                                <button type="button" class="btn btn-secondary tag" disabled>Kupatilo</button>
+                            </div>
+                          </div>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p>
+                          <a href="#" class="stretched-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5">
+                    <div class="section-header">
+                        <h3>Zaključani oglasi</h3>
+                        <hr>
+                    </div>
+                    <div class="card card mx-auto" style="width: 50%; opacity:0.5">
+                        <img class="card-img-top rounded" src="images/problem2.jpg" alt="Card image cap">
                         <div class="card-body text-center">
                           <h5 class="card-title">Naslov oglasa</h5>
                           <div class="container col-lg-8">
@@ -56,28 +77,6 @@
                             </div>
                           </div>
                           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p>
-                          <a href="majstor-u-oglasu-pre-ponude.html" class="stretched-link"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-5">
-                    <div class="card mx-auto" style="width: 50%;">
-                        <img class="card-img-top rounded" src="images/problem5.jpg" alt="Card image cap">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Naslov oglasa</h5>
-                            <div class="container col-lg-8">
-                                <div class="container">
-                                    <button type="button" class="btn btn-secondary tag" disabled>Cevi</button>
-                                    <button type="button" class="btn btn-secondary tag" disabled>Kupatilo</button>
-                                </div>
-                            </div>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p>
-                            <div class="alert alert-primary">
-                                <div class="header">
-                                    Poslali ste ponudu za ovaj oglas
-                                </div>
-                            </div>
-                            <a href="majstor-u-oglasu-posle-ponude.html" class="stretched-link"></a>
                         </div>
                     </div>
                 </div>

@@ -56,3 +56,25 @@ hr{
     height: 20vw;
     object-fit: cover;
 }
+
+.section-header{
+    margin: auto;
+    width: 50%;
+}
+
+#moji-svi-select{
+    margin-top: 70px;
+}
+
+.modal-body > div{
+    margin-bottom: 20px;
+}
+
+#modal-button{
+    color: black;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
