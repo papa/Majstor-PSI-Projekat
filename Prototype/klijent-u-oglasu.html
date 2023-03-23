@@ -22,6 +22,7 @@
                     </button>
                     <ul class="dropdown-menu  dropdown-menu-end">
                         <li><a class="dropdown-item" href="#">Profil</a></li>
+                        <li><a class="dropdown-item" href="razgovor.html">Razgovori</a></li>
                         <li><a class="dropdown-item" href="login.html">Odjava</a></li>
                     </ul>
                 </div>
@@ -83,7 +84,10 @@
         <div id="ponude" class="col-lg-8 container">
             <h1>Ponude</h1>
                 <div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action flex-column">
+                    <a data-bs-toggle="modal"
+                       href="#"
+                       data-bs-target="#offerModal"
+                       class="list-group-item list-group-item-action flex-column">
                         <div class="d-flex w-100 justify-content-between">
                             <h5>
                                 <div class="row">
@@ -102,7 +106,10 @@
                         </p>
                         <small href="#" class="text-muted">Predložena cena: 6000 RSD</small>
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action flex-column">
+                    <a href="#.html"
+                       data-bs-toggle="modal"
+                      data-bs-target="#offerModal"
+                       class="list-group-item list-group-item-action flex-column">
                         <div class="d-flex w-100 justify-content-between">
                             <h5>
                                 <div class="row">
@@ -122,6 +129,33 @@
                         <small href="#" class="text-muted">Predložena cena: 5500 RSD</small>
                     </a>
                 </div>
+        </div>
+    </div>
+    <div class="modal fade" id="offerModal"  data-bs-backdrop="static"  tabindex="-1">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Pregled ponude</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="price" class="form-label">Predložena cena</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="price" readonly value="1800">
+                            <span class="input-group-text">RSD</span>
+                        </div><br>
+                        <label for="date" class="form-label">Najavljeni datum popravke</label>
+                        <input type="date" class="form-control" id="date" placeholder="Unesite datum" readonly value="2023-04-03"><br>
+                        <label for="description" class="form-label">Komentari majstora</label>
+                        <textarea class="form-control" id="description" rows="3" readonly>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" onclick="window.location = 'razgovor.html'">Prihvati ponudu </button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zatvori</button>
+                </div>
+            </div>
         </div>
     </div>
 </body>

@@ -24,7 +24,7 @@
                     </button>
                     <ul class="dropdown-menu  dropdown-menu-end">
                         <li><a class="dropdown-item" href="#">Profil</a></li>
-                        <li><a class="dropdown-item" href="login.html">Odjava</a></li>
+                        <li><a class="dropdown-item" href="razgovor.html">Razgovori</a></li><li><a class="dropdown-item" href="login.html">Odjava</a></li>
                     </ul>
                 </div>
             </form>
@@ -118,9 +118,34 @@
                 Moje Ponude
             </h1>
             <div class="button-div">
-                <a href="majstor-u-oglasu-posle-ponude.html">
-                    <button type="button" class="btn btn-success">Pošalji ponudu</button>
-                </a>
+                <button data-bs-toggle="modal" data-bs-target="#offerModal" type="button" class="btn btn-success">Pošalji ponudu</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="offerModal"  data-bs-backdrop="static"  tabindex="-1">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Postavi ponudu</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="price" class="form-label">Cena</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="price" placeholder="Unesite cenu">
+                            <span class="input-group-text">RSD</span>
+                        </div><br>
+                        <label for="date" class="form-label">Unesite najraniji mogući datum popravke</label>
+                        <input type="date" class="form-control" id="date" placeholder="Unesite datum"><br>
+                        <label for="description" class="form-label">Opis (Vaši komentari na problem)</label>
+                        <textarea class="form-control" id="description" rows="3" placeholder="Unesite opis"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" onclick="window.location = 'majstor-u-oglasu-posle-ponude.html'">Pošalji ponudu</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zatvori</button>
+                </div>
             </div>
         </div>
     </div>
